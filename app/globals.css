@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --industrial-dark: #2C3E50;
+  --industrial-medium: #34495E;
+  --steel-blue: #3498DB;
+  --vibrant-orange: #E67E22;
+  --metal-silver: #BDC3C7;
+  --deep-black: #1A1A1A;
+}
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .industrial-gradient {
+    background: linear-gradient(135deg, var(--industrial-dark) 0%, var(--industrial-medium) 100%);
+  }
+  
+  .steel-gradient {
+    background: linear-gradient(135deg, var(--steel-blue) 0%, #2980B9 100%);
+  }
+  
+  .metallic-texture {
+    background: linear-gradient(45deg, #2C3E50 25%, transparent 25%), 
+                linear-gradient(-45deg, #2C3E50 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #34495E 75%), 
+                linear-gradient(-45deg, transparent 75%, #34495E 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(231, 126, 34, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(231, 126, 34, 0.6); }
+}
+
+@keyframes slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-slide-in-up {
+  animation: slide-in-up 0.6s ease-out forwards;
+}
+
+.parallax-element {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--steel-blue), var(--vibrant-orange));
+  transform-origin: left;
+  z-index: 9999;
+}
+
+/* Loading screen styles */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--industrial-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transition: opacity 0.5s ease-out;
+}
+
+.loading-gear {
+  width: 60px;
+  height: 60px;
+  border: 6px solid var(--steel-blue);
+  border-radius: 50%;
+  border-top-color: var(--vibrant-orange);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--industrial-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--steel-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vibrant-orange);
+}
+
+/* Responsive typography */
+@screen sm {
+  .hero-title {
+    @apply text-4xl;
+  }
+}
+
+@screen md {
+  .hero-title {
+    @apply text-5xl;
+  }
+}
+
+@screen lg {
+  .hero-title {
+    @apply text-6xl;
+  }
+}
+
+@screen xl {
+  .hero-title {
+    @apply text-7xl;
+  }
+}
