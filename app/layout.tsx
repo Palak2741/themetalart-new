@@ -7,6 +7,7 @@ import Script from 'next/script';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://themetalart.com'),
   title: 'The Metal Art | Advanced Mechanical Automation & Metal Fabrication | Gohana, Haryana',
   description: 'Leading provider of advanced mechanical automation, precision metal fabrication, and structural engineering services in Gohana, Haryana. Expert craftsmanship, innovative solutions.',
   keywords: 'mechanical automation, metal fabrication, structural engineering, Gohana, Haryana, precision manufacturing, industrial automation',
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     description: 'Leading provider of advanced mechanical automation, precision metal fabrication, and structural engineering services in Gohana, Haryana.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://themetalart.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'The Metal Art - Industrial Manufacturing Excellence',
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'The Metal Art | Industrial Manufacturing Excellence',
     description: 'Advanced mechanical automation, precision metal fabrication, and structural engineering services.',
-    images: ['/og-image.jpg'],
+    images: ['https://themetalart.com/og-image.jpg'],
   },
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#2C3E50',
