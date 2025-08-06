@@ -85,15 +85,19 @@ const Header = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center space-x-4">
-              <Button
-                variant="outline"
-                className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
-              >
-                Get Quote
-              </Button>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                Call Now
-              </Button>
+              <Link href="/contact">
+                <Button
+                  variant="outline"
+                  className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
+                >
+                  Get Quote
+                </Button>
+              </Link>
+              <a href="tel:+919416943116">
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                  Call Now
+                </Button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -123,15 +127,19 @@ const Header = () => {
                   </Link>
                 ))}
                 <div className="flex flex-col space-y-2 pt-4">
-                  <Button
-                    variant="outline"
-                    className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
-                  >
-                    Get Quote
-                  </Button>
-                  <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                    Call Now
-                  </Button>
+                  <Link href="/contact">
+                    <Button
+                      variant="outline"
+                      className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white w-full"
+                    >
+                      Get Quote
+                    </Button>
+                  </Link>
+                  <a href="tel:+919416943116">
+                    <Button className="bg-orange-500 hover:bg-orange-600 text-white w-full">
+                      Call Now
+                    </Button>
+                  </a>
                 </div>
               </nav>
             </div>

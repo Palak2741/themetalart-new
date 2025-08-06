@@ -21,81 +21,120 @@ export default function PortfolioPage() {
   const projects = [
     {
       id: 1,
-      title: "Automated Assembly Line",
+      title: "Automated Conveyor System",
       category: "automation",
       image: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg",
-      description: "Complete robotic assembly system for automotive parts manufacturing",
-      client: "AutoTech Industries",
-      duration: "6 months",
-      location: "Gurgaon, Haryana",
-      team: "8 engineers",
-      technologies: ["6-axis robotic arms", "Vision systems", "PLC control"],
-      results: ["40% increase in production", "99.9% quality rate", "24/7 operation"]
+      description: "Advanced automated conveyor system with sorting and packaging capabilities for industrial manufacturing",
+      client: "Manufacturing Industries Ltd.",
+      duration: "4 months",
+      location: "Sonipat, Haryana",
+      team: "6 engineers",
+      technologies: ["PLC Control System", "Sensor Integration", "Variable Speed Drives"],
+      results: ["50% faster processing", "Reduced manual labor", "24/7 operation capability"]
     },
     {
       id: 2,
-      title: "Precision Steel Framework",
+      title: "Industrial Steel Structure",
       category: "fabrication",
       image: "https://images.pexels.com/photos/162568/steel-industry-structure-metal-162568.jpeg",
-      description: "Custom steel framework for industrial warehouse construction",
-      client: "BuildCorp Ltd.",
-      duration: "4 months",
-      location: "Sonipat, Haryana",
-      team: "12 fabricators",
-      technologies: ["50 tons steel", "Earthquake resistant", "Custom welding"],
-      results: ["5000 sq ft structure", "Seismic compliance", "On-time delivery"]
+      description: "Heavy-duty industrial steel structure for manufacturing facility with crane support systems",
+      client: "Industrial Construction Corp",
+      duration: "8 months",
+      location: "Panipat, Haryana",
+      team: "15 fabricators",
+      technologies: ["80 tons structural steel", "Earthquake resistant design", "Advanced welding techniques"],
+      results: ["12,000 sq ft facility", "Load capacity 50 tons", "IS 800 compliant"]
     },
     {
       id: 3,
-      title: "Bridge Structural Analysis",
+      title: "Mechanical Workshop Setup",
       category: "engineering",
-      image: "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg",
-      description: "Comprehensive structural engineering for highway bridge project",
-      client: "State Highway Dept.",
-      duration: "8 months",
-      location: "Panipat, Haryana",
-      team: "6 engineers",
-      technologies: ["300m span", "Load capacity 80T", "3D modeling"],
-      results: ["Safety certified", "Load tested", "Traffic ready"]
+      image: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
+      description: "Complete mechanical workshop design and setup with modern machinery layout and safety systems",
+      client: "Technical Training Institute",
+      duration: "6 months",
+      location: "Gohana, Haryana",
+      team: "8 engineers",
+      technologies: ["Workshop layout design", "Machinery installation", "Safety systems"],
+      results: ["50 workstations", "Modern equipment", "Safety compliant"]
     },
     {
       id: 4,
-      title: "Robotic Welding Cell",
+      title: "Automated Material Handling",
       category: "automation",
       image: "https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg",
-      description: "Advanced welding automation for shipbuilding industry",
-      client: "Marine Shipyard",
+      description: "Automated material handling system with robotic arms and conveyor integration",
+      client: "Logistics Solutions Pvt Ltd",
       duration: "5 months",
-      location: "Mumbai, Maharashtra",
-      team: "10 technicians",
-      technologies: ["Multi-pass welding", "Quality monitoring", "Automated inspection"],
-      results: ["60% faster welding", "Zero defects", "Cost savings 30%"]
+      location: "Delhi NCR",
+      team: "12 technicians",
+      technologies: ["Robotic arms", "Conveyor systems", "Automated sorting"],
+      results: ["70% efficiency increase", "Reduced handling time", "Error-free sorting"]
     },
     {
       id: 5,
-      title: "Custom Machinery Parts",
+      title: "Precision Machine Components",
       category: "fabrication",
       image: "https://images.pexels.com/photos/1108717/pexels-photo-1108717.jpeg",
-      description: "High-precision machined components for mining equipment",
-      client: "MiningTech Corp",
+      description: "High-precision CNC machined components for textile machinery with tight tolerances",
+      client: "Textile Machinery Ltd",
       duration: "3 months",
-      location: "Jharkhand",
-      team: "15 machinists",
-      technologies: ["±0.01mm tolerance", "Hardened steel", "Custom tooling"],
-      results: ["1000+ parts delivered", "Zero rejects", "Extended lifespan"]
+      location: "Ludhiana, Punjab",
+      team: "10 machinists",
+      technologies: ["CNC machining", "±0.005mm tolerance", "Quality inspection"],
+      results: ["500+ components", "Zero defects", "On-time delivery"]
     },
     {
       id: 6,
-      title: "Industrial Plant Design",
+      title: "Factory Layout Design",
       category: "engineering",
-      image: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
-      description: "Complete structural design for chemical processing plant",
-      client: "ChemProcess Inc.",
-      duration: "12 months",
-      location: "Gujarat",
-      team: "20 engineers",
-      technologies: ["Corrosion resistant", "Safety systems", "Modular design"],
-      results: ["100,000 sq ft facility", "Safety certified", "Operational ready"]
+      image: "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg",
+      description: "Comprehensive factory layout design and optimization for automotive parts manufacturing",
+      client: "Auto Components Manufacturer",
+      duration: "10 months",
+      location: "Gurgaon, Haryana",
+      team: "12 engineers",
+      technologies: ["3D layout modeling", "Workflow optimization", "Safety compliance"],
+      results: ["30% space optimization", "Improved workflow", "Safety certified"]
+    },
+    {
+      id: 7,
+      title: "Heavy Machinery Installation",
+      category: "engineering",
+      image: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg",
+      description: "Installation and commissioning of heavy industrial machinery with foundation design",
+      client: "Heavy Industries Corp",
+      duration: "7 months",
+      location: "Faridabad, Haryana",
+      team: "18 engineers",
+      technologies: ["Foundation design", "Machinery alignment", "Vibration analysis"],
+      results: ["15 machines installed", "Perfect alignment", "Vibration-free operation"]
+    },
+    {
+      id: 8,
+      title: "Automated Quality Control",
+      category: "automation",
+      image: "https://images.pexels.com/photos/1108717/pexels-photo-1108717.jpeg",
+      description: "Vision-based automated quality control system for manufacturing processes",
+      client: "Quality Systems Ltd",
+      duration: "4 months",
+      location: "Noida, UP",
+      team: "8 engineers",
+      technologies: ["Machine vision", "AI algorithms", "Reject handling"],
+      results: ["99.8% accuracy", "Real-time inspection", "Automated reporting"]
+    },
+    {
+      id: 9,
+      title: "Custom Fabrication Project",
+      category: "fabrication",
+      image: "https://images.pexels.com/photos/162568/steel-industry-structure-metal-162568.jpeg",
+      description: "Custom fabrication of specialized equipment housings and enclosures",
+      client: "Equipment Manufacturing Co",
+      duration: "5 months",
+      location: "Rohtak, Haryana",
+      team: "12 fabricators",
+      technologies: ["Sheet metal work", "Powder coating", "Assembly"],
+      results: ["200+ enclosures", "Weather resistant", "Modular design"]
     }
   ];
 
@@ -288,13 +327,17 @@ export default function PortfolioPage() {
             Let's discuss how we can help you achieve your industrial automation and manufacturing goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
-              Get Free Quote
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
+                Get Free Quote
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

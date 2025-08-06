@@ -288,9 +288,15 @@ export default function ContactPage() {
                   <div className="text-center">
                     <MapPin className="w-16 h-16 text-orange-500 mx-auto mb-4" />
                     <p className="text-gray-400 mb-2">Interactive Map</p>
-                    <Button variant="outline" className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white">
-                      Open in Google Maps
-                    </Button>
+                    <a 
+                      href="https://maps.google.com/?q=Gohana,Haryana,India" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="outline" className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white">
+                        Open in Google Maps
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -301,9 +307,11 @@ export default function ContactPage() {
                 <p className="text-gray-400 mb-6">
                   Our technical support team is available for urgent queries and project discussions.
                 </p>
-                <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">
-                  Start Live Chat
-                </Button>
+                <a href="tel:+919416943116">
+                  <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">
+                    Call Now for Support
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

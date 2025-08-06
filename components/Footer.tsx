@@ -63,19 +63,19 @@ const Footer = () => {
   ];
 
   const serviceLinks = [
-    { href: '/services/automation', label: 'Mechanical Automation' },
-    { href: '/services/fabrication', label: 'Metal Fabrication' },
-    { href: '/services/engineering', label: 'Structural Engineering' },
-    { href: '/services/consulting', label: 'Engineering Consulting' },
-    { href: '/services/maintenance', label: 'Maintenance Services' },
+    { href: '/services', label: 'Mechanical Automation' },
+    { href: '/services', label: 'Metal Fabrication' },
+    { href: '/services', label: 'Structural Engineering' },
+    { href: '/services', label: 'Engineering Consulting' },
+    { href: '/services', label: 'Maintenance Services' },
   ];
 
   const quickLinks = [
     { href: '/portfolio', label: 'Portfolio' },
-    { href: '/blog', label: 'Blog' },
+    { href: '/', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
-    { href: '/quote', label: 'Request Quote' },
-    { href: '/support', label: 'Technical Support' },
+    { href: '/contact', label: 'Request Quote' },
+    { href: '/contact', label: 'Technical Support' },
   ];
 
   return (
@@ -242,6 +242,14 @@ const Footer = () => {
                   <div className="text-center">
                     <MapPin className="w-8 h-8 text-orange-500 mx-auto mb-2" />
                     <p className="text-sm text-gray-400">Gohana, Haryana</p>
+                    <a 
+                      href="https://maps.google.com/?q=Gohana,Haryana,India" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-xs text-orange-500 hover:text-orange-400 mt-1 inline-block"
+                    >
+                      View on Map
+                    </a>
                   </div>
                 </div>
               </div>

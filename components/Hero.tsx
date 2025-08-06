@@ -98,21 +98,25 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-in-up" style={{ animationDelay: '0.4s' }}>
-            <Button
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold group animate-pulse-glow"
-            >
-              Get Quote Now
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-4 text-lg font-semibold group"
-            >
-              <Play className="mr-2 group-hover:scale-110 transition-transform" />
-              View Portfolio
-            </Button>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold group animate-pulse-glow"
+              >
+                Get Quote Now
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link href="/portfolio">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-4 text-lg font-semibold group"
+              >
+                <Play className="mr-2 group-hover:scale-110 transition-transform" />
+                View Portfolio
+              </Button>
+            </Link>
           </div>
 
           {/* Statistics */}

@@ -14,57 +14,57 @@ const PortfolioShowcase = () => {
   const projects = [
     {
       id: 1,
-      title: 'Automated Assembly Line',
+      title: 'Automated Conveyor System',
       category: 'Automation',
-      description: 'Complete robotic assembly system for automotive parts manufacturing',
+      description: 'Advanced automated conveyor system with sorting and packaging capabilities',
       image: 'https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg',
-      specs: ['6-axis robotic arms', 'Vision systems', '99.9% accuracy'],
-      client: 'AutoTech Industries',
+      specs: ['PLC Control System', 'Sensor Integration', 'Variable Speed Drives'],
+      client: 'Manufacturing Industries Ltd.',
     },
     {
       id: 2,
-      title: 'Precision Steel Framework',
+      title: 'Industrial Steel Structure',
       category: 'Fabrication',
-      description: 'Custom steel framework for industrial warehouse construction',
+      description: 'Heavy-duty industrial steel structure for manufacturing facility',
       image: 'https://images.pexels.com/photos/162568/steel-industry-structure-metal-162568.jpeg',
-      specs: ['50 tons steel', 'Earthquake resistant', 'Fire rated coating'],
-      client: 'BuildCorp Ltd.',
+      specs: ['80 tons structural steel', 'Earthquake resistant', 'Advanced welding'],
+      client: 'Industrial Construction Corp',
     },
     {
       id: 3,
-      title: 'Bridge Structural Analysis',
+      title: 'Mechanical Workshop Setup',
       category: 'Engineering',
-      description: 'Comprehensive structural engineering for highway bridge project',
-      image: 'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg',
-      specs: ['300m span', 'Load capacity 80T', 'Seismic analysis'],
-      client: 'State Highway Dept.',
+      description: 'Complete mechanical workshop design and setup with modern machinery',
+      image: 'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg',
+      specs: ['Workshop layout design', 'Machinery installation', 'Safety systems'],
+      client: 'Technical Training Institute',
     },
     {
       id: 4,
-      title: 'Robotic Welding Cell',
+      title: 'Automated Material Handling',
       category: 'Automation',
-      description: 'Advanced welding automation for shipbuilding industry',
+      description: 'Automated material handling system with robotic arms and conveyor integration',
       image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg',
-      specs: ['Multi-pass welding', 'Quality monitoring', 'Fume extraction'],
-      client: 'Marine Shipyard',
+      specs: ['Robotic arms', 'Conveyor systems', 'Automated sorting'],
+      client: 'Logistics Solutions Pvt Ltd',
     },
     {
       id: 5,
-      title: 'Custom Machinery Parts',
+      title: 'Precision Machine Components',
       category: 'Fabrication',
-      description: 'High-precision machined components for mining equipment',
+      description: 'High-precision CNC machined components for textile machinery',
       image: 'https://images.pexels.com/photos/1108717/pexels-photo-1108717.jpeg',
-      specs: ['±0.01mm tolerance', 'Hardened steel', 'Surface treatment'],
-      client: 'MiningTech Corp',
+      specs: ['CNC machining', '±0.005mm tolerance', 'Quality inspection'],
+      client: 'Textile Machinery Ltd',
     },
     {
       id: 6,
-      title: 'Industrial Plant Design',
+      title: 'Factory Layout Design',
       category: 'Engineering',
-      description: 'Complete structural design for chemical processing plant',
-      image: 'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg',
-      specs: ['Corrosion resistant', 'Safety systems', 'Modular design'],
-      client: 'ChemProcess Inc.',
+      description: 'Comprehensive factory layout design and optimization for automotive parts',
+      image: 'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg',
+      specs: ['3D layout modeling', 'Workflow optimization', 'Safety compliance'],
+      client: 'Auto Components Manufacturer',
     },
   ];
 
@@ -187,13 +187,15 @@ const PortfolioShowcase = () => {
 
         {/* Bottom CTA */}
         <div className="text-center">
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-semibold group"
-          >
-            View Complete Portfolio
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link href="/portfolio">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-semibold group"
+            >
+              View Complete Portfolio
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
       </div>
 

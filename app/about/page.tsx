@@ -190,10 +190,12 @@ export default function AboutPage() {
                     ))}
                   </ul>
                   <div className="mt-6">
-                    <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                      <MapPin className="w-4 h-4 mr-2" />
-                      Request Site Visit
-                    </Button>
+                    <Link href="/contact">
+                      <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                        <MapPin className="w-4 h-4 mr-2" />
+                        Request Site Visit
+                      </Button>
+                    </Link>
                   </div>
                 </div>
                 <div className="bg-gray-700 rounded-xl h-80 flex items-center justify-center">
@@ -217,12 +219,16 @@ export default function AboutPage() {
             Let's discuss how our engineering expertise can transform your industrial operations
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 font-semibold px-8 py-4">
-              Start Your Project
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4">
-              Schedule Consultation
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 font-semibold px-8 py-4">
+                Start Your Project
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4">
+                Schedule Consultation
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
