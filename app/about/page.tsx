@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CheckCircle, Users, Award, MapPin, Calendar } from 'lucide-react';
